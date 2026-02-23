@@ -48,7 +48,7 @@
         <section id="comments">
             <h3 class="subtitle">방명록</h3>
             <div class="comment-writing-container" id="writing">
-                <form>
+                <form onsubmit="event.preventDefault(); getInput();">
                     <fieldset>
                         <div class="flex-container">
                             <img src="./images/comment-author-icon.png" alt="작성자 아이콘"/>
