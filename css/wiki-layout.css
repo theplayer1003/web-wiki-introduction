@@ -1,0 +1,35 @@
+/* css/wiki-layout.css */
+#app {
+    /* 블록 포맷팅 컨텍스트, BFC 를 그리드 포맷팅 컨텍스트, GFC 로 전환 */
+    display: grid;
+
+    /* 뷰포트 중앙 정렬 및 최대 렌더링 폭 제한 */
+    max-width: 1200px;
+    margin: 0 auto;
+
+    /* 2차원 공간 분할 명세 (열과 행) */
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: auto 1fr;
+
+    /* 시맨틱 노드와 그리드 영역의 매핑 아키텍처 */
+    grid-template-areas:
+     "header header"
+     "main aside";
+
+    /* 노드 간의 물리적 간격(Gutter) 할당 */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* 각 DOM 노드를 계산된 그리드 영역에 바인딩 */
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.right-sidebar {
+    grid-area: asdie;
+}
