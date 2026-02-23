@@ -1,0 +1,67 @@
+/* css/main.css */
+/* 헤더 및 타이포그래피 렌더링 제어 */
+.logo {
+    font-size: 2rem;
+    font-weigth: 700;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.title, .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--border-color);
+    margin-bottom: 20px;
+}
+
+/* 갤러리 이미지 대체 요소 사이즈 제어 */
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.images img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+/* 방명록 폼 컨트롤 노드 렌더링 */
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#input1 {
+    flex: 1; /* 가용 공간을 최대로 점유하도록 동적 너비 할당 */
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.button-group button {
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    background-color: white;
+    cursor: pointer;
+}
+
+/* 정적 더미 댓글 노드 렌더링 */
+.comment-list li {
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    background-color: white;
+    border-radius: 4px;
+}

@@ -1,0 +1,20 @@
+/* css/common.css */
+:root {
+    /* 전역 디자인 토큰 (CSS Variables) */
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --border-color: #e0e0e0;
+    --bg-color: #f8f9fa;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
