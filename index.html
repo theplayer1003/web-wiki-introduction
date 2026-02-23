@@ -1,45 +1,85 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>my 프로필 위키</title>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>my 프로필 위키</title>
 
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/common.css" />
-        <link rel="stylesheet" href="./css/wiki-layout.css" />
-        <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/wiki-layout.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
 
-        <script src="./js/index.js" defer></script>
-    </head>
-    <body>
-        <div id="app">
-            <header>
-                <h1 class="logo">
-                    <span class="text">theple wiki</span>
-                </h1>
-            </header>
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+<div id="app">
+    <header>
+        <h1 class="logo">
+            <span class="text">theple wiki</span>
+        </h1>
+    </header>
 
-            <main>
-                <section id="introduce">
-                    <h2 class="title">자기소개</h2>
-                </section>
+    <main>
+        <section id="introduce">
+            <h2 class="title">자기소개</h2>
+            <hr/>
+            <p>
+                안녕하세요.<br>
+                나 혼자 우테코 과정을 실천 중인 패패입니다.<br>
+                MBTI 는 ESTJ 입니다.
+                새로운 것을 접하는 걸 좋아하고 협업에 관심이 많습니다.<br>
+                생일은 10월 3일 입니다.
+            </p>
+        </section>
 
-                <section id="gallery">
-                    <h3 class="subtitle">방명록</h3>
-                </section>
-            </main>
+        <section id="gallery">
+            <h3 class="subtitle">나만의 갤러리</h3>
+            <article>
+                <h4>좋아하는 음식</h4>
+                <div class="images">
+                    <img src="./images/chicken.jpg" alt="치킨"/>
+                    <img src="./images/image2.jpg" alt="음식1"/>
+                    <img src="./images/image3.jpg" alt="음식2"/>
+                </div>
+            </article>
+        </section>
 
-            <aside class="right-sidebar">
-                <nav>
-                    <h2>목차</h2>
-                    <ol class="contents">
-                        <li><a href="#introduce">자기소개</a></li>
-                        <li><a href="#gallery">갤러리</a></li>
-                        <li><a href="#comments">방명록</a></li>
-                    </ol>
-                </nav>
-            </aside>
-        </div>
-    </body>
+        <section id="comments">
+            <h3 class="subtitle">방명록</h3>
+            <div class="comment-writing-container" id="writing">
+                <form>
+                    <fieldset>
+                        <div class="flex-container">
+                            <img src="./images/comment-author-icon.png" alt="작성자 아이콘"/>
+                            <input id="input1" type="text" placeholder="댓글 부탁"/>
+                            <div class="button-group">
+                                <button id="reset" type="reset">취소</button>
+                                <button id="button" type="button" onclick="getInput()">등록</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <br>
+            <ul class="comment-list">
+                <li>
+                    <div class="comment-content">Dummy 댓글</div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <aside class="right-sidebar">
+        <nav>
+            <h2>목차</h2>
+            <ol class="contents">
+                <li><a href="#introduce">자기소개</a></li>
+                <li><a href="#gallery">갤러리</a></li>
+                <li><a href="#comments">방명록</a></li>
+            </ol>
+        </nav>
+    </aside>
+</div>
+</body>
 </html>
